@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="image_settings">Настройки</string>
+    <string name="popular">Популярные</string>
+    <string name="image_grid">Сетка</string>
+    <string name="restaurants">🍷 Рестораны</string>
+    <string name="fast_food">🍔 Фастфуд</string>
+    <string name="bakery">🥐 Пекарни</string>
+    <string name="list_of_eateries">Список заведений</string>
+    <string name="image_notifications">Уведомления</string>
+    <string name="image_profile_image">Фото профиля</string>
+    <string name="default_address">Строителей, 25</string>
+    <string name="default_eatery_rating">4,8</string>
+    <string name="image_favorite">Избранное</string>
+    <string name="default_eatery_name">Ресторан «Один»</string>
+    <string name="default_eatery_schedule">С 9:00 до 18:00</string>
+    <string name="image_right_arrow">Стрелка вправо</string>
+</resources>
