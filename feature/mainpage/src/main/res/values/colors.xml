@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#FF8541</color>
     <color name="gray">#EDEDED</color>
+    <color name="ripple_color">#80FFFFFF</color>
+    <color name="search_view_text">#80151515</color>
+    <color name="eatery_schedule_text">#99FFFFFF</color>
 </resources>

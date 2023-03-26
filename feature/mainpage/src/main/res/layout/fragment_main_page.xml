@@ -6,17 +6,175 @@
     android:layout_height="match_parent"
     tools:context=".MainPageFragment">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
     <TextView
+        android:id="@+id/tv_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_400"
-        android:text="Строителей, 25"
+        android:text="@string/default_address"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_notifications"
+        app:layout_constraintStart_toStartOf="@+id/gl_left"
+        app:layout_constraintTop_toTopOf="@+id/gl_top" />
+
+    <ImageView
+        android:id="@+id/bt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/ic_down_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_address"
+        app:layout_constraintStart_toEndOf="@+id/tv_address"
+        app:layout_constraintTop_toTopOf="@+id/tv_address"
+        android:contentDescription="@string/image_profile_image" />
+
+    <ImageView
+        android:id="@+id/bt_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_orange_circle_clickable"
+        android:padding="6dp"
+        android:src="@drawable/ic_notification"
+        app:layout_constraintEnd_toStartOf="@+id/circleImageView"
+        app:layout_constraintTop_toTopOf="@+id/gl_top"
+        android:contentDescription="@string/image_notifications" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_test_user_image"
+        app:layout_constraintEnd_toStartOf="@+id/gl_right"
+        app:layout_constraintTop_toTopOf="@+id/gl_top" />
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_search_view"
+        android:iconifiedByDefault="false"
+        android:queryHint="Поиск"
+        android:searchIcon="@drawable/ic_search"
+        android:theme="@style/AppSearchView"
+        app:layout_constraintEnd_toStartOf="@+id/gl_right"
+        app:layout_constraintStart_toStartOf="@+id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/bt_notifications" />
+
+    <TextView
+        android:id="@+id/tv_list_of_eateries"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_600"
+        android:text="@string/list_of_eateries"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/gl_left"
+        app:layout_constraintTop_toBottomOf="@+id/search_view" />
+
+    <HorizontalScrollView
+        android:id="@+id/eatery_types"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/tv_list_of_eateries">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_restaurants"
+                style="@style/EateryType"
+                android:background="@drawable/bg_eatery_type_selected"
+                android:text="@string/restaurants"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_fast_food"
+                style="@style/EateryType"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_eatery_type_not_selected"
+                android:text="@string/fast_food"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_bakery"
+                style="@style/EateryType"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_eatery_type_not_selected"
+                android:text="@string/bakery"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/iv_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_grid"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_popular"
+        app:layout_constraintStart_toStartOf="@id/gl_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_popular"
+        android:contentDescription="@string/image_grid" />
+
+    <TextView
+        android:id="@+id/tv_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/inter_600"
+        android:text="@string/popular"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eatery_types" />
 
+    <ImageView
+        android:id="@+id/iv_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_popular"
+        app:layout_constraintEnd_toEndOf="@id/gl_right"
+        app:layout_constraintTop_toTopOf="@+id/tv_popular"
+        android:contentDescription="@string/image_settings" />
 
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:listitem="@layout/rv_eatery_item"
+        app:layout_constraintEnd_toStartOf="@+id/gl_right"
+        app:layout_constraintStart_toStartOf="@+id/gl_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_popular" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
