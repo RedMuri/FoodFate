@@ -1,4 +1,26 @@
 <resources>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="eatery_image">Eatery image</string>
+    <string name="icon_search">Icon search</string>
+    <string name="icon_button_back">Icon button back</string>
+    <string name="icon_favorite">Icon favorite</string>
+    <string name="default_eatery_rating">4,8 (183)</string>
+    <string name="default_eatery_schedule">9:00 - 18:00</string>
+    <string name="default_eatery_name">Ресторан «Один»</string>
+    <string name="default_eatery_address">г. Ярославль,\nул. Промышленная, 33</string>
+    <string name="meals">Блюда</string>
+    <string name="burgers">🍔 Бургеры</string>
+    <string name="french_fries">🍟 Картошка фри</string>
+    <string name="pizza">🍕 Пицца</string>
+    <string name="icon_grid">Icon grid</string>
+    <string name="popular">Популярные</string>
+    <string name="icon_settings">Icon settings</string>
+    <string name="default_meals_count">2</string>
+    <string name="go_to_cart">В корзину</string>
+    <string name="default_total_meals_price">240₽</string>
+    <string name="meal_image">Meal image</string>
+    <string name="default_meal_discount">-15%</string>
+    <string name="default_meal_price">160₽</string>
+    <string name="default_meal_weight">245г</string>
+    <string name="default_meal_name">Набор «Биг Тейсти и мал фри»</string>
+    <string name="add">Добавить</string>
 </resources>

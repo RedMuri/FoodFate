@@ -6,4 +6,5 @@
     <color name="orange">#FF8541</color>
     <color name="gray">#EDEDED</color>
     <color name="ripple_color">#80FFFFFF</color>
+    <color name="half_black">#80000000</color>
 </resources>
