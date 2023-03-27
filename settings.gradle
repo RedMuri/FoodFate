@@ -16,3 +16,4 @@ rootProject.name = "FoodFate"
 include ':app'
 include ':feature:mainpage'
 include ':feature:meals'
+include ':feature:cart'
