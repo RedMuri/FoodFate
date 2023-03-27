@@ -1,2 +1,17 @@
 <resources>
+    <string name="default_meal_discount">-15%</string>
+    <string name="default_meal_price">160₽</string>
+    <string name="default_meal_weight">245г</string>
+    <string name="default_meal_name">Набор «Биг Тейсти и мал фри»</string>
+    <string name="meal_image">Meal image</string>
+    <string name="default_meals_count">2</string>
+    <string name="icon_minus">Icon minus</string>
+    <string name="icon_plus">Icon plus</string>
+    <string name="cart">Корзина</string>
+    <string name="pay_method">Способ получения</string>
+    <string name="pickup">Самовывоз</string>
+    <string name="courier">Курьером</string>
+    <string name="courier_surcharge">+100₽</string>
+    <string name="default_total_price">Всего:\n240₽</string>
+    <string name="buy">Купить</string>
 </resources>
