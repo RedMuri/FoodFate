@@ -172,7 +172,7 @@
         android:layout_marginTop="22dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="vertical"
-        tools:listitem="@layout/rv_eatery_item"
+        tools:listitem="@layout/rv_item_eatery"
         app:layout_constraintEnd_toStartOf="@+id/gl_right"
         app:layout_constraintStart_toStartOf="@+id/gl_left"
         app:layout_constraintTop_toBottomOf="@+id/tv_popular" />
