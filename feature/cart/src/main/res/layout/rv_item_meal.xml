@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_for_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <ImageView
+        android:id="@+id/iv_meal_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/meal_image"
+        android:src="@drawable/image_food_1"
+        app:layout_constraintEnd_toStartOf="@+id/gl_for_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_meal_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_orange_rounded_rect"
+        android:fontFamily="@font/roboto_600"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:text="@string/default_meal_discount"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/iv_meal_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_meal_image" />
+
+    <TextView
+        android:id="@+id/tv_meal_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto_600"
+        android:text="@string/default_meal_price"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_meal_name"
+        app:layout_constraintStart_toStartOf="@+id/gl_for_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_meal_image"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_meal_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/roboto_400"
+        android:text="@string/default_meal_weight"
+        android:textColor="@color/half_black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_meal_price"
+        app:layout_constraintStart_toEndOf="@id/tv_meal_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_meal_price" />
+
+    <RadioButton
+        android:id="@+id/radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_meal_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_400"
+        android:maxLines="2"
+        android:text="@string/default_meal_name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/panel_meals_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_meal_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_meal_price" />
+
+    <LinearLayout
+        android:id="@+id/panel_meals_count"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_orange_rounded_rect"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:gravity="center"
+        android:paddingVertical="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_meal_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_meal_name">
+
+        <ImageView
+            android:id="@+id/bt_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_minus"
+            android:layout_gravity="center"
+            android:contentDescription="@string/icon_minus" />
+
+        <TextView
+            android:id="@+id/bt_add_to_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_600"
+            android:gravity="center"
+            android:text="@string/default_meals_count"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/bt_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_plus"
+            android:layout_gravity="center"
+            android:contentDescription="@string/icon_plus" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_meal_image"
+        android:background="@color/gray"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">@color/search_view_text</item>
+        <item name="android:textColor">@color/search_view_text</item>
+        <item name="android:textColorHint">@color/search_view_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_500</item>
+    </style>
+</resources>
