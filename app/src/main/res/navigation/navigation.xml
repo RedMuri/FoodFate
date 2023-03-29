@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainPageFragment">
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.cart.CartFragment"
+        android:label="CartFragment" />
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.auth.LogInFragment"
+        android:label="LogInFragment" />
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.example.mainpage.MainPageFragment"
+        android:label="MainPageFragment" />
+    <fragment
+        android:id="@+id/mealsFragment"
+        android:name="com.example.meals.MealsFragment"
+        android:label="MealsFragment" />
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.auth.SignInFragment"
+        android:label="SignInFragment" />
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.example.cart.SuccessFragment"
+        android:label="SuccessFragment" />
+</navigation>
