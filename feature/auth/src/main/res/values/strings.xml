@@ -11,4 +11,6 @@
     <string name="sign_in">Зарегистрироваться</string>
     <string name="already_have_acc">Уже есть аккаунт?</string>
     <string name="log_in">Войти</string>
+    <string name="forgot_password"><u>Забыли пароль?</u></string>
+    <string name="no_acc">Нет аккаунта?</string>
 </resources>
