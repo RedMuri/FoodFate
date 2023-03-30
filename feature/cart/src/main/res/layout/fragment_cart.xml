@@ -39,7 +39,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/bg_search_view"
             android:iconifiedByDefault="false"
-            android:queryBackground="none"
+            android:queryBackground="@color/gray"
             android:queryHint="Поиск"
             android:searchIcon="@drawable/ic_search"
             android:theme="@style/AppSearchView"
