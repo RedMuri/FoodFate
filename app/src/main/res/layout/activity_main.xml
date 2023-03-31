@@ -23,7 +23,7 @@
         android:layout_gravity="bottom"
         android:visibility="gone"
         app:labelVisibilityMode="unlabeled"
-         />
+        app:menu="@menu/bottom_nav_menu" />
 </LinearLayout>
 
 
