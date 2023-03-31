@@ -34,6 +34,9 @@
         <action
             android:id="@+id/action_mainPageFragment_to_mealsFragment"
             app:destination="@id/mealsFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
     </fragment>
     <fragment
         android:id="@+id/mealsFragment"
