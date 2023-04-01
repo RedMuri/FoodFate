@@ -99,9 +99,11 @@
 
     <HorizontalScrollView
         android:id="@+id/eatery_types"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:scrollbars="none"
         android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/gl_left"
         app:layout_constraintTop_toBottomOf="@id/tv_list_of_eateries">
 
@@ -112,6 +114,8 @@
             <TextView
                 android:id="@+id/tv_restaurants"
                 style="@style/EateryType"
+                android:clickable="true"
+                android:focusable="true"
                 android:background="@drawable/bg_eatery_type_selected"
                 android:text="@string/restaurants"
                 android:textColor="@color/white" />
@@ -120,6 +124,8 @@
                 android:id="@+id/tv_fast_food"
                 style="@style/EateryType"
                 android:layout_marginStart="8dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:background="@drawable/bg_eatery_type_not_selected"
                 android:text="@string/fast_food"
                 android:textColor="@color/black" />
@@ -127,6 +133,8 @@
             <TextView
                 android:id="@+id/tv_bakery"
                 style="@style/EateryType"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/bg_eatery_type_not_selected"
                 android:text="@string/bakery"
