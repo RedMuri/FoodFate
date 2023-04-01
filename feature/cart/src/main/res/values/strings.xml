@@ -14,4 +14,6 @@
     <string name="courier_surcharge">+100₽</string>
     <string name="default_total_price">Всего:\n240₽</string>
     <string name="buy">Купить</string>
+    <string name="back">Назад</string>
+    <string name="success">Успешно!\n🎉</string>
 </resources>
