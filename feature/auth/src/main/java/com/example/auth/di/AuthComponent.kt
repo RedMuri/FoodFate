@@ -1,8 +1,8 @@
 package com.example.auth.di
 
 import android.app.Application
-import com.example.auth.LogInFragment
-import com.example.auth.SignInFragment
+import com.example.auth.fragments.LogInFragment
+import com.example.auth.fragments.SignInFragment
 import com.example.data.di.DataModule
 import com.example.db.di.DbModule
 import dagger.BindsInstance
