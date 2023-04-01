@@ -69,4 +69,8 @@ class MainActivity : AppCompatActivity(), Navigator {
     override fun navigateFromMainPageToMealsPage() {
         navController.navigate(R.id.action_mainPageFragment_to_mealsFragment)
     }
+
+    override fun navigateFromMealsToCartPage() {
+        navController.navigate(R.id.action_mealsFragment_to_cartFragment)
+    }
 }
