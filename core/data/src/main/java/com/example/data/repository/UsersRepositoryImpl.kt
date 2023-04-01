@@ -2,7 +2,6 @@ package com.example.data.repository
 
 import com.example.data.exceptions.UserAlreadyExistsException
 import com.example.data.exceptions.UserDoesNotExistsException
-import com.example.data.exceptions.UserNotFoundException
 import com.example.data.exceptions.WrongPasswordLogInException
 import com.example.data.mappers.UsersMapper
 import com.example.db.dao.UsersDao
