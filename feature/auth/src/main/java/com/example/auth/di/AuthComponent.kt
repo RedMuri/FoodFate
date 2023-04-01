@@ -9,7 +9,7 @@ import dagger.BindsInstance
 import dagger.Component
 
 @Component(
-    modules = [DataModule::class, DbModule::class]
+    modules = [DataModule::class, DbModule::class, AuthViewModelModule::class]
 )
 interface AuthComponent {
 
