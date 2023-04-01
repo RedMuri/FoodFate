@@ -21,8 +21,8 @@ class SignInViewModel @Inject constructor(
     private var _authState = MutableLiveData<AuthState>()
     val authState: LiveData<AuthState> = _authState
 
-    fun signIn(name: String, phone: String, password: String) {
-        val fieldsValid = validateInputSignIn(name, phone, password)
+    fun signIn(name: String, phone: String, password: String, repeatPassword: String) {
+        val fieldsValid = validateInputSignIn(name, phone, password, repeatPassword)
         if (fieldsValid) {
             _authState.value = AuthProgress
             val user = User(name, phone, password)
@@ -38,7 +38,12 @@ class SignInViewModel @Inject constructor(
         }
     }
 
-    private fun validateInputSignIn(name: String, phone: String, password: String): Boolean {
+    private fun validateInputSignIn(
+        name: String,
+        phone: String,
+        password: String,
+        repeatPassword: String,
+    ): Boolean {
         if (name.isBlank()) {
             _authState.value = AuthError(ERROR_EMPTY_NAME)
             return false
@@ -51,6 +56,10 @@ class SignInViewModel @Inject constructor(
             _authState.value = AuthError(ERROR_EMPTY_PASSWORD)
             return false
         }
+        if (password != repeatPassword) {
+            _authState.value = AuthError(ERROR_PASSWORDS_DO_NOT_MATCH)
+            return false
+        }
         return true
     }
 
@@ -60,5 +69,6 @@ class SignInViewModel @Inject constructor(
         const val ERROR_EMPTY_PHONE = 2
         const val ERROR_EMPTY_PASSWORD = 3
         const val ERROR_SUCH_USER_EXISTS = 4
+        const val ERROR_PASSWORDS_DO_NOT_MATCH = 5
     }
 }

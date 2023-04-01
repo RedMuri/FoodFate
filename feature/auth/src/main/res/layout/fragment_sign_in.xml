@@ -85,14 +85,14 @@
         android:paddingVertical="16dp"
         android:textColor="@color/gray"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@id/et_number"
+        app:layout_constraintBottom_toTopOf="@id/et_phone"
         app:layout_constraintEnd_toStartOf="@+id/gl_right"
         app:layout_constraintStart_toStartOf="@+id/gl_left"
         app:layout_constraintTop_toBottomOf="@+id/tv_authorize_to_continue"
         app:layout_constraintVertical_chainStyle="spread" />
 
     <EditText
-        android:id="@+id/et_number"
+        android:id="@+id/et_phone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:autofillHints="phone"
@@ -125,7 +125,7 @@
         app:layout_constraintBottom_toTopOf="@id/et_repeat_password"
         app:layout_constraintEnd_toStartOf="@+id/gl_right"
         app:layout_constraintStart_toStartOf="@+id/gl_left"
-        app:layout_constraintTop_toBottomOf="@+id/et_number" />
+        app:layout_constraintTop_toBottomOf="@+id/et_phone" />
 
     <EditText
         android:id="@+id/et_repeat_password"
