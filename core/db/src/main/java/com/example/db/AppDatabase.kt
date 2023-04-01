@@ -4,8 +4,10 @@ import android.app.Application
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.db.dao.UsersDao
+import com.example.db.models.UserDbModel
 
-@Database(version = 7, exportSchema = false)
+@Database(entities = [UserDbModel::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
 
     companion object {
@@ -30,4 +32,5 @@ abstract class AppDatabase : RoomDatabase() {
         const val USERS_TABLE_NAME = "users"
     }
 
+    abstract fun usersDao(): UsersDao
 }
