@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Food\nFate</string>
+    <string name="greetings">Добро\nпожаловать!</string>
+    <string name="text_under_greetings">Войдите или зарегистрируйтесь,\nчтобы продолжить</string>
+    <string name="image_app_logo">Image app logo</string>
+    <string name="hint_name">Имя</string>
+    <string name="hint_number">Номер телефона</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_repeat_password">Повторите пароль</string>
+    <string name="sign_in">Зарегистрироваться</string>
+    <string name="already_have_acc">Уже есть аккаунт?</string>
+    <string name="log_in">Войти</string>
+    <string name="forgot_password"><u>Забыли пароль?</u></string>
+    <string name="no_acc">Нет аккаунта?</string>
+</resources>
