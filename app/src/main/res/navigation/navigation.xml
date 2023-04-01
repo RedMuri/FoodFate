@@ -21,7 +21,9 @@
         tools:layout="@layout/fragment_log_in">
         <action
             android:id="@+id/action_logInFragment_to_mainPageFragment"
-            app:destination="@id/mainPageFragment" />
+            app:destination="@id/mainPageFragment"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_logInFragment_to_signInFragment"
             app:destination="@id/signInFragment" />
@@ -62,7 +64,9 @@
             app:destination="@id/logInFragment" />
         <action
             android:id="@+id/action_signInFragment_to_mainPageFragment"
-            app:destination="@id/mainPageFragment" />
+            app:destination="@id/mainPageFragment"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/successFragment"
