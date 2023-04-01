@@ -5,6 +5,7 @@
     <color name="orange">#FF8541</color>
     <color name="gray_custom">#EDEDED</color>
     <color name="ripple_color">#CCFFFFFF</color>
+    <color name="ripple_color_dark">#CC888686</color>
     <color name="search_view_text">#80151515</color>
     <color name="eatery_schedule_text">#99FFFFFF</color>
 </resources>
