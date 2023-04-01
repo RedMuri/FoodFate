@@ -3,7 +3,6 @@ package com.example.foodfate
 import android.app.Application
 import com.example.auth.di.AuthComponent
 import com.example.auth.di.AuthComponentProvider
-import com.example.foodfate.di.DaggerAppComponent
 
 class FoodFateApp : Application(), AuthComponentProvider {
 

@@ -2,7 +2,8 @@ package com.example.auth.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.domain.use_cases.*
+import com.example.domain.use_cases.LogInUseCase
+import com.example.domain.use_cases.SignInUseCase
 import javax.inject.Inject
 
 class AuthViewModelFactory @Inject constructor(

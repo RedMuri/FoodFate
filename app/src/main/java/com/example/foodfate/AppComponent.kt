@@ -12,7 +12,9 @@ import dagger.Component
 @Component(
     modules = [DbModule::class, DataModule::class]
 )
-interface AppComponent: AuthComponent {
+interface AppComponent : AuthComponent {
+
+    fun inject(application: FoodFateApp)
 
     override fun inject(signInFragment: SignInFragment)
 

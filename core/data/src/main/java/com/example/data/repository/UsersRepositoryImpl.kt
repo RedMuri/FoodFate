@@ -6,12 +6,13 @@ import com.example.data.exceptions.WrongPasswordLogInException
 import com.example.data.mappers.UsersMapper
 import com.example.db.dao.UsersDao
 import com.example.domain.model.User
+import com.example.domain.repository.UsersRepository
 import javax.inject.Inject
 
 class UsersRepositoryImpl @Inject constructor(
     private val usersDao: UsersDao,
     private val usersMapper: UsersMapper,
-) : com.example.domain.repository.UsersRepository {
+) : UsersRepository {
 
     @Throws(UserAlreadyExistsException::class)
     override suspend fun signIn(user: User, callback: () -> Unit) {
