@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import androidx.preference.PreferenceManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity(), Navigator {
@@ -18,6 +19,15 @@ class MainActivity : AppCompatActivity(), Navigator {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setupNav()
+        checkUserSigned()
+    }
+
+    private fun checkUserSigned() {
+        val pref = PreferenceManager.getDefaultSharedPreferences(this)
+        val isRegistered = pref.getBoolean(IS_LOGGED, false)
+        if (!isRegistered) {
+            navController.navigate(R.id.action_mainPageFragment_to_signInFragment)
+        }
     }
 
     private fun setupNav() {
@@ -72,5 +82,10 @@ class MainActivity : AppCompatActivity(), Navigator {
 
     override fun navigateFromMealsToCartPage() {
         navController.navigate(R.id.action_mealsFragment_to_cartFragment)
+    }
+
+    companion object {
+
+        const val IS_LOGGED = "is_logged"
     }
 }
