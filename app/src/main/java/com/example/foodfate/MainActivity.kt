@@ -2,13 +2,12 @@ package com.example.foodfate
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.preference.PreferenceManager
 import android.view.View
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), Navigator {
 
     private val navHostFragment by lazy {
         supportFragmentManager.findFragmentById(R.id.main_container) as NavHostFragment
@@ -45,5 +44,21 @@ class MainActivity : AppCompatActivity() {
     private fun hideBottomNav() {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav)
         bottomNav.visibility = View.GONE
+    }
+
+    override fun navigateFromSignInToMainPage() {
+        navController.navigate(R.id.action_signInFragment_to_mainPageFragment)
+    }
+
+    override fun navigateFromLogInToMainPage() {
+        navController.navigate(R.id.action_logInFragment_to_mainPageFragment)
+    }
+
+    override fun navigateFromSignInToLogInPage() {
+        navController.navigate(R.id.action_signInFragment_to_logInFragment)
+    }
+
+    override fun navigateFromLogInToSignInPage() {
+        navController.navigate(R.id.action_logInFragment_to_signInFragment)
     }
 }
