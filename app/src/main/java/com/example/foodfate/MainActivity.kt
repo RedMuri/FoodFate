@@ -61,4 +61,8 @@ class MainActivity : AppCompatActivity(), Navigator {
     override fun navigateFromLogInToSignInPage() {
         navController.navigate(R.id.action_logInFragment_to_signInFragment)
     }
+
+    override fun navigateFromCartToSuccessPage() {
+        navController.navigate(R.id.action_cartFragment_to_successFragment)
+    }
 }
