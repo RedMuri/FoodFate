@@ -37,6 +37,7 @@ android {
 dependencies {
     implementation project(path: ':core:data')
     implementation project(path: ':core:db')
+    implementation project(path: ':core:domain')
 
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -47,4 +48,7 @@ dependencies {
 
     implementation 'com.google.dagger:dagger:2.45'
     kapt 'com.google.dagger:dagger-compiler:2.45'
+
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
 }
