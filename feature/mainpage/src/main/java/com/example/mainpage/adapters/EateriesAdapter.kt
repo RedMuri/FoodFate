@@ -12,7 +12,7 @@ class EateriesAdapter() :
         EateryDiffCallback()
     ) {
 
-    var onItemClickListener: ((Eatery) -> Unit)? = null
+    var onBtRightArrowClickListener: ((Eatery) -> Unit)? = null
 
     class EateryViewHolder(val binding: RvItemEateryBinding) :
         ViewHolder(binding.root)
@@ -29,8 +29,8 @@ class EateriesAdapter() :
                 tvEateryName.text = name
                 tvEateryRating.text = rating
                 tvEaterySchedule.text = schedule
-                root.setOnClickListener {
-                    onItemClickListener?.invoke(this)
+                btRightArrow.setOnClickListener {
+                    onBtRightArrowClickListener?.invoke(this)
                 }
             }
         }

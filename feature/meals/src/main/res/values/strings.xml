@@ -14,9 +14,9 @@
     <string name="icon_grid">Icon grid</string>
     <string name="popular">Популярные</string>
     <string name="icon_settings">Icon settings</string>
-    <string name="default_meals_count">2</string>
+    <string name="default_meals_count">0</string>
     <string name="go_to_cart">В корзину</string>
-    <string name="default_total_meals_price">240₽</string>
+    <string name="default_total_meals_price">0₽</string>
     <string name="meal_image">Meal image</string>
     <string name="default_meal_discount">-15%</string>
     <string name="default_meal_price">160₽</string>

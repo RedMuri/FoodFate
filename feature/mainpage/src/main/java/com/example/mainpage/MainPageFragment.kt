@@ -39,7 +39,7 @@ class MainPageFragment : Fragment() {
     }
 
     private fun bindClickListeners() {
-        adapterEateries.onItemClickListener = {
+        adapterEateries.onBtRightArrowClickListener = {
             navigator.navigateFromMainPageToMealsPage()
         }
     }
