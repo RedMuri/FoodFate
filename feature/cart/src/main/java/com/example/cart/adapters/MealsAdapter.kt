@@ -1,26 +1,22 @@
-package com.example.meals.adapters
+package com.example.cart.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.cart.databinding.RvCartItemMealBinding
 import com.example.domain.model.Meal
-import com.example.meals.R
-import com.example.meals.databinding.RvItemMealBinding
 
 class MealsAdapter() :
     ListAdapter<Meal, MealsAdapter.MealViewHolder>(
         MealDiffCallback()
     ) {
 
-    var onBtAddToCartClickListener: ((Meal) -> Unit)? = null
-
-    class MealViewHolder(val binding: RvItemMealBinding) :
+    class MealViewHolder(val binding: RvCartItemMealBinding) :
         ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MealViewHolder {
-        val binding = RvItemMealBinding
+        val binding = RvCartItemMealBinding
             .inflate(LayoutInflater.from(parent.context), parent, false)
         return MealViewHolder(binding)
     }
@@ -32,15 +28,6 @@ class MealsAdapter() :
                 tvMealPrice.text = String.format("%s₽", price.toString())
                 tvMealWeight.text = String.format("%s г.", weight.toString())
                 tvMealDiscount.text = String.format("-%s%%", discount.toString())
-                btAddToCart.setOnClickListener {
-                    btAddToCart.text = "Добавлено"
-                    btAddToCart.isEnabled = false
-                    btAddToCart.background = AppCompatResources.getDrawable(
-                        holder.binding.root.context,
-                        R.drawable.bg_gray_rounded_rect
-                    )
-                    onBtAddToCartClickListener?.invoke(this)
-                }
             }
         }
     }

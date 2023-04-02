@@ -82,7 +82,6 @@ class LogInFragment : Fragment() {
 
             when (it) {
                 is AuthSuccess -> {
-                    Toast.makeText(requireContext(), "Success!", Toast.LENGTH_SHORT).show()
                     navigator.navigateFromLogInToMainPage()
                     updateSharedPreferences()
                 }
