@@ -276,7 +276,7 @@
             android:fontFamily="@font/roboto_600"
             android:gravity="center"
             android:paddingVertical="16dp"
-            android:text="@string/default_meals_count"
+            android:text="@string/_0"
             android:textColor="@color/white"
             android:textSize="20sp" />
 

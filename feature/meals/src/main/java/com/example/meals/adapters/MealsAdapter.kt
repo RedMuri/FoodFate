@@ -2,15 +2,19 @@ package com.example.meals.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.domain.model.Meal
+import com.example.meals.R
 import com.example.meals.databinding.RvItemMealBinding
 
 class MealsAdapter() :
     ListAdapter<Meal, MealsAdapter.MealViewHolder>(
         MealDiffCallback()
     ) {
+
+    var onBtAddToCartClickListener: ((Meal) -> Unit)? = null
 
     class MealViewHolder(val binding: RvItemMealBinding) :
         ViewHolder(binding.root)
@@ -30,6 +34,12 @@ class MealsAdapter() :
                 tvMealDiscount.text = String.format("-%s%%", discount.toString())
                 btAddToCart.setOnClickListener {
                     btAddToCart.text = "Добавлено"
+                    btAddToCart.isEnabled = false
+                    btAddToCart.background = AppCompatResources.getDrawable(
+                        holder.binding.root.context,
+                        R.drawable.bg_gray_rounded_rect
+                    )
+                    onBtAddToCartClickListener?.invoke(this)
                 }
             }
         }

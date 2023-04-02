@@ -23,4 +23,5 @@
     <string name="default_meal_weight">245г</string>
     <string name="default_meal_name">Набор «Биг Тейсти и мал фри»</string>
     <string name="add">Добавить</string>
+    <string name="_0">0</string>
 </resources>

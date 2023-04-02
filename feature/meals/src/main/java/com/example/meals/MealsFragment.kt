@@ -24,6 +24,8 @@ class MealsFragment : Fragment() {
         (requireActivity() as MealsNavigation)
     }
 
+    private var totalMealsCount = 0
+    private var totalMealsPrice = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,15 +45,21 @@ class MealsFragment : Fragment() {
         binding.btGoToCart.setOnClickListener {
             navigator.navigateFromMealsToCartPage()
         }
+        adapterMeals.onBtAddToCartClickListener = {
+            totalMealsCount++
+            totalMealsPrice += it.price
+            binding.tvMealsCount.text = totalMealsCount.toString()
+            binding.tvTotalMealsPrice.text = String.format("%s₽", totalMealsPrice.toString())
+        }
     }
 
     private fun setupRecyclerView() {
         binding.rvMeals.adapter = adapterMeals
         val testMeals = listOf(
-            Meal(1, "Набор «Биг Тейсти и фри»", 120,200,40),
-            Meal(2, "Набор «Биг Тейсти и мал фри»", 160,245,25),
-            Meal(3, "Набор «Биг Тейсти и фри»", 120,200,40),
-            Meal(4, "Набор «Биг Тейсти и мал фри»", 160,245,25),
+            Meal(1, "Набор «Биг Тейсти и фри»", 120, 200, 40),
+            Meal(2, "Набор «Биг Тейсти и мал фри»", 160, 245, 25),
+            Meal(3, "Набор «Биг Тейсти и фри»", 120, 200, 40),
+            Meal(4, "Набор «Биг Тейсти и мал фри»", 160, 245, 25),
         )
         adapterMeals.submitList(testMeals)
     }
