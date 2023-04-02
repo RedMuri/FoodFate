@@ -1,4 +1,4 @@
-package com.example.meals.adapters
+package com.example.cart.adapters
 
 import androidx.recyclerview.widget.DiffUtil
 import com.example.domain.model.Meal

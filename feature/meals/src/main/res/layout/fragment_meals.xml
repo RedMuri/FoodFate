@@ -52,8 +52,8 @@
 
             <ImageView
                 android:id="@+id/bt_back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:background="@drawable/bg_white_circle_clickable"
                 android:contentDescription="@string/icon_button_back"
                 android:padding="8dp"
@@ -150,7 +150,7 @@
                 android:fontFamily="@font/roboto_600"
                 android:text="@string/meals"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 app:layout_constraintStart_toStartOf="@+id/gl_left"
                 app:layout_constraintTop_toBottomOf="@+id/iv_eatery_image" />
 
@@ -211,7 +211,7 @@
                 android:fontFamily="@font/inter_600"
                 android:text="@string/popular"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/eatery_types" />
@@ -231,10 +231,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
+                android:layout_marginBottom="8dp"
                 android:orientation="horizontal"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/gl_right"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/gl_left"
                 app:layout_constraintTop_toBottomOf="@+id/tv_popular"
                 tools:listitem="@layout/rv_item_meal" />
@@ -275,10 +276,10 @@
             android:background="@drawable/bg_light_black_rounded_rect"
             android:fontFamily="@font/roboto_600"
             android:gravity="center"
-            android:paddingVertical="16dp"
+            android:paddingVertical="14dp"
             android:text="@string/_0"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/bt_go_to_cart"
@@ -290,10 +291,10 @@
             android:focusable="true"
             android:fontFamily="@font/roboto_600"
             android:gravity="center"
-            android:paddingVertical="16dp"
+            android:paddingVertical="14dp"
             android:text="@string/go_to_cart"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_total_meals_price"
@@ -303,9 +304,9 @@
             android:background="@drawable/bg_light_black_rounded_rect"
             android:fontFamily="@font/roboto_600"
             android:gravity="center"
-            android:paddingVertical="16dp"
+            android:paddingVertical="14dp"
             android:text="@string/default_total_meals_price"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

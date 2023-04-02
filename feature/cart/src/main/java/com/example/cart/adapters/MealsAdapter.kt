@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.cart.databinding.RvCartItemMealBinding
 import com.example.domain.model.Meal
-import com.example.meals.adapters.MealDiffCallback
 
 class MealsAdapter() :
     ListAdapter<Meal, MealsAdapter.MealViewHolder>(
