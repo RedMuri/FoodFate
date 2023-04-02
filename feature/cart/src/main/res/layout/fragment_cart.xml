@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
+    android:background="@color/gray_custom"
     tools:context=".CartFragment">
 
     <ScrollView
@@ -132,7 +132,7 @@
                     android:layout_width="0dp"
                     android:layout_height="2dp"
                     android:layout_marginTop="16dp"
-                    android:background="@color/gray"
+                    android:background="@color/gray_custom"
                     app:layout_constraintEnd_toEndOf="@id/gl_middle_right"
                     app:layout_constraintStart_toStartOf="@+id/gl_middle_left"
                     app:layout_constraintTop_toBottomOf="@id/tv_pay_method" />
@@ -164,7 +164,7 @@
                     android:layout_width="0dp"
                     android:layout_height="2dp"
                     android:layout_marginTop="22dp"
-                    android:background="@color/gray"
+                    android:background="@color/gray_custom"
                     app:layout_constraintEnd_toEndOf="@id/gl_middle_right"
                     app:layout_constraintStart_toStartOf="@+id/gl_middle_left"
                     app:layout_constraintTop_toBottomOf="@id/tv_pickup" />
@@ -208,7 +208,7 @@
                     android:layout_height="2dp"
                     android:layout_marginTop="22dp"
                     android:layout_marginBottom="24dp"
-                    android:background="@color/gray"
+                    android:background="@color/gray_custom"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@id/gl_middle_right"
                     app:layout_constraintStart_toStartOf="@+id/gl_middle_left"
