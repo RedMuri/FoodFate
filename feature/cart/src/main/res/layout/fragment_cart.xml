@@ -71,7 +71,7 @@
             app:layout_constraintStart_toStartOf="@+id/gl_top_left"
             app:layout_constraintTop_toBottomOf="@+id/tv_cart"
             tools:itemCount="1"
-            tools:listitem="@layout/rv_item_meal" />
+            tools:listitem="@layout/rv_cart_item_meal" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
