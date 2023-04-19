@@ -49,6 +49,8 @@
         tools:layout="@layout/fragment_meals">
         <action
             android:id="@+id/action_mealsFragment_to_cartFragment"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true"
             app:destination="@id/cartFragment" />
         <argument
             android:name="eatery_id"
