@@ -84,5 +84,9 @@
             android:id="@+id/action_favoriteFragment_to_mealsFragment"
             app:destination="@id/mealsFragment" />
     </fragment>
-
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.map.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/fragment_map" />
 </navigation>
