@@ -75,4 +75,14 @@
         android:name="com.example.cart.SuccessFragment"
         android:label="SuccessFragment"
         tools:layout="@layout/fragment_success" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.favorite.FavoriteFragment"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_mealsFragment"
+            app:destination="@id/mealsFragment" />
+    </fragment>
+
 </navigation>

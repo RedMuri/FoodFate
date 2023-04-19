@@ -84,6 +84,10 @@ class MainActivity : AppCompatActivity(), Navigator {
         navController.navigate(R.id.action_mealsFragment_to_cartFragment)
     }
 
+    override fun navigateFromFavoriteToMealsPage() {
+        navController.navigate(R.id.action_favoriteFragment_to_mealsFragment)
+    }
+
     companion object {
 
         const val IS_LOGGED = "is_logged"
