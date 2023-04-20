@@ -11,19 +11,19 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.05" />
+        app:layout_constraintGuide_percent="0.08" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_right"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.95" />
+        app:layout_constraintGuide_percent="0.92" />
 
     <ImageView
         android:id="@+id/iv_app_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:contentDescription="@string/image_app_logo"
         android:src="@drawable/image_app_logo"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,7 +51,7 @@
         android:fontFamily="@font/roboto_900"
         android:text="@string/greetings"
         android:textColor="@color/orange"
-        android:textSize="40sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/gl_right"
         app:layout_constraintStart_toStartOf="@+id/gl_left"
@@ -62,11 +62,11 @@
         android:id="@+id/tv_authorize_to_continue"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
         android:fontFamily="@font/roboto_500"
         android:text="@string/text_under_greetings"
         android:textColor="@color/gray"
-        android:textSize="14sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/gl_right"
         app:layout_constraintStart_toStartOf="@+id/gl_left"
         app:layout_constraintTop_toBottomOf="@+id/tv_greetings" />
@@ -101,6 +101,7 @@
         android:hint="@string/hint_password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@id/bt_forgot_password"
+        android:layout_marginTop="6dp"
         android:paddingHorizontal="32dp"
         android:paddingVertical="14dp"
         android:textColor="@color/gray"

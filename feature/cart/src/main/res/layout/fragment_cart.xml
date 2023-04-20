@@ -70,7 +70,7 @@
                     android:fontFamily="@font/roboto_600"
                     android:text="@string/cart"
                     android:textColor="@color/black"
-                    android:textSize="22sp"
+                    android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="@+id/gl_top_left"
                     app:layout_constraintTop_toBottomOf="@+id/search_view" />
 
@@ -123,7 +123,7 @@
                     android:fontFamily="@font/roboto_500"
                     android:text="@string/pay_method"
                     android:textColor="@color/black"
-                    android:textSize="22sp"
+                    android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="@+id/gl_middle_left"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -155,7 +155,7 @@
                     android:fontFamily="@font/roboto_400"
                     android:text="@string/pickup"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     app:layout_constraintStart_toEndOf="@id/rb_pickup"
                     app:layout_constraintTop_toTopOf="@id/underline_pay_method" />
 
@@ -186,7 +186,7 @@
                     android:fontFamily="@font/roboto_400"
                     android:text="@string/courier"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     app:layout_constraintStart_toEndOf="@id/rb_delivery"
                     app:layout_constraintTop_toTopOf="@id/underline_pickup" />
 
@@ -197,7 +197,7 @@
                     android:fontFamily="@font/roboto_400"
                     android:text="@string/courier_surcharge"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="@+id/tv_delivery"
                     app:layout_constraintEnd_toStartOf="@+id/gl_middle_right"
                     app:layout_constraintTop_toTopOf="@+id/tv_delivery" />
@@ -249,7 +249,7 @@
             android:fontFamily="@font/roboto_400"
             android:text="@string/default_total_price"
             android:textColor="@color/light_black"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@id/gl_bottom_left"
             app:layout_constraintTop_toTopOf="parent" />

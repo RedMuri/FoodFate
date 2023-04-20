@@ -21,7 +21,7 @@
             <ImageView
                 android:id="@+id/iv_eatery_image"
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
+                android:layout_height="240dp"
                 android:contentDescription="@string/eatery_image"
                 android:scaleType="centerCrop"
                 android:src="@drawable/image_restaurant"
@@ -52,8 +52,8 @@
 
             <ImageView
                 android:id="@+id/bt_back"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:background="@drawable/bg_white_circle_clickable"
                 android:contentDescription="@string/icon_button_back"
                 android:padding="8dp"
@@ -126,7 +126,7 @@
                 android:fontFamily="@font/roboto_600"
                 android:text="@string/default_eatery_name"
                 android:textColor="@color/white"
-                android:textSize="32sp"
+                android:textSize="26sp"
                 app:layout_constraintBottom_toTopOf="@+id/tv_eatery_address"
                 app:layout_constraintStart_toStartOf="@+id/gl_left" />
 
@@ -138,7 +138,7 @@
                 android:fontFamily="@font/roboto_400"
                 android:text="@string/default_eatery_address"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="@+id/iv_eatery_image"
                 app:layout_constraintStart_toStartOf="@+id/gl_left" />
 

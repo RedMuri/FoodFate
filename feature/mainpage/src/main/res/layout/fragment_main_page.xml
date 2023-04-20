@@ -93,7 +93,7 @@
         android:fontFamily="@font/roboto_600"
         android:text="@string/list_of_eateries"
         android:textColor="@color/black"
-        android:textSize="26sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="@+id/gl_left"
         app:layout_constraintTop_toBottomOf="@+id/search_view" />
 
@@ -160,7 +160,7 @@
         android:fontFamily="@font/inter_600"
         android:text="@string/popular"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eatery_types" />
