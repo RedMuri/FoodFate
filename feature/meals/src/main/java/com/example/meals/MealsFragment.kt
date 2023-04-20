@@ -51,6 +51,9 @@ class MealsFragment : Fragment() {
             binding.tvMealsCount.text = totalMealsCount.toString()
             binding.tvTotalMealsPrice.text = String.format("%s₽", totalMealsPrice.toString())
         }
+        binding.btBack.setOnClickListener {
+            requireActivity().onBackPressedDispatcher.onBackPressed()
+        }
     }
 
     private fun setupRecyclerView() {

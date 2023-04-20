@@ -88,6 +88,10 @@ class MainActivity : AppCompatActivity(), Navigator {
         navController.navigate(R.id.action_favoriteFragment_to_mealsFragment)
     }
 
+    override fun navigateFromProfileToLogInPage() {
+        navController.navigate(R.id.action_profileFragment_to_logInFragment)
+    }
+
     companion object {
 
         const val IS_LOGGED = "is_logged"

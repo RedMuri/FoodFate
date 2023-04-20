@@ -49,9 +49,9 @@
         tools:layout="@layout/fragment_meals">
         <action
             android:id="@+id/action_mealsFragment_to_cartFragment"
+            app:destination="@id/cartFragment"
             app:popUpTo="@id/navigation"
-            app:popUpToInclusive="true"
-            app:destination="@id/cartFragment" />
+            app:popUpToInclusive="true" />
         <argument
             android:name="eatery_id"
             app:argType="integer" />
@@ -79,7 +79,7 @@
         android:id="@+id/favoriteFragment"
         android:name="com.example.favorite.FavoriteFragment"
         android:label="FavoriteFragment"
-        tools:layout="@layout/fragment_favorite" >
+        tools:layout="@layout/fragment_favorite">
         <action
             android:id="@+id/action_favoriteFragment_to_mealsFragment"
             app:destination="@id/mealsFragment" />
@@ -89,4 +89,15 @@
         android:name="com.example.map.MapFragment"
         android:label="MapFragment"
         tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_logInFragment"
+            app:destination="@id/logInFragment"
+            app:popUpTo="@id/navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

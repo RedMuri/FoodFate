@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">Food\nFate</string>
+    <string name="app_name">"Food\nFate"</string>
     <string name="greetings">Добро\nпожаловать!</string>
     <string name="text_under_greetings">Войдите или зарегистрируйтесь,\nчтобы продолжить</string>
     <string name="image_app_logo">Image app logo</string>

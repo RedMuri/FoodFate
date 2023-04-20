@@ -2,20 +2,30 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="250dp"
+    android:layout_height="200dp"
     android:layout_marginBottom="16dp"
     app:cardCornerRadius="20dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:background="@drawable/image_restaurant">
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/favorite_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_restaurant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/iv_eatery_logo"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
             android:src="@drawable/ic_restaurant_logo_1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -33,7 +43,7 @@
             android:paddingHorizontal="16dp"
             android:text="@string/default_eatery_rating"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:drawableLeftCompat="@drawable/ic_star"
             app:layout_constraintBottom_toBottomOf="@+id/iv_eatery_logo"
             app:layout_constraintStart_toEndOf="@+id/iv_eatery_logo"
@@ -41,25 +51,27 @@
 
         <ImageView
             android:id="@+id/bt_favorite"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
             android:background="@drawable/bg_orange_circle_clickable"
-            android:padding="6dp"
             android:clickable="true"
+            android:contentDescription="@string/image_favorite"
             android:focusable="true"
+            android:padding="6dp"
             android:src="@drawable/ic_favorite"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/image_favorite" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_eatery_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:fontFamily="@font/roboto_600"
             android:text="@string/default_eatery_name"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            android:textSize="22sp"
             app:layout_constraintBottom_toTopOf="@+id/tv_eatery_schedule"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -67,25 +79,27 @@
             android:id="@+id/tv_eatery_schedule"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:fontFamily="@font/roboto_400"
             android:text="@string/default_eatery_schedule"
             android:textColor="@color/eatery_schedule_text"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/bt_right_arrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
             android:background="@drawable/bg_white_circle_clickable"
             android:clickable="true"
+            android:contentDescription="@string/image_right_arrow"
             android:focusable="true"
             android:padding="6dp"
             android:src="@drawable/ic_right_arrow"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:contentDescription="@string/image_right_arrow" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
